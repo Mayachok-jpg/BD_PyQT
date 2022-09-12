@@ -14,8 +14,6 @@ from decos import log
 from metaclasses import ClientVerifier
 
 # Инициализация клиентского логера
-
-
 logger = logging.getLogger('client_dist')
 
 

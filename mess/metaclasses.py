@@ -49,13 +49,13 @@ class ServerVerifier(type):
                         if i.argval not in attrs:
                             # заполняем список атрибутами, использующимися в функциях класса
                             attrs.append(i.argval)
-        print(20*'-', 'methods', 20*'-')
-        pprint(methods)
-        print(20*'-', 'methods_2', 20*'-')
-        pprint(methods_2)
-        print(20*'-', 'attrs', 20*'-')
-        pprint(attrs)
-        print(50*'-')
+        # print(20*'-', 'methods', 20*'-')
+        # pprint(methods)
+        # print(20*'-', 'methods_2', 20*'-')
+        # pprint(methods_2)
+        # print(20*'-', 'attrs', 20*'-')
+        # pprint(attrs)
+        # print(50*'-')
         # Если обнаружено использование недопустимого метода connect, вызываем исключение:
         if 'connect' in methods:
             raise TypeError('Использование метода connect недопустимо в серверном классе')
